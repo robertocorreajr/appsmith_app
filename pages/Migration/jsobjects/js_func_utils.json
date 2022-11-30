@@ -1,0 +1,25 @@
+{
+  "unpublishedCollection": {
+    "name": "js_func_utils",
+    "pageId": "Migration",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tcheckOrig: () => {\n\t\tif (orig_check_limbo.isChecked == true) {\n      orig_input_account.text = '7937';  \n\t\t\t\tconsole.log(\"aguardando\");\n    } else {\n\t\t\t\torig_input_account.text = '3';\n    }\n\t},\n\tcheckNilOrig: () => {\n\t\tif (orig_input_account.text != '') {\n\t\t\tget_orig_account_billing.run()\n\t\t}\n\t},\n\tcheckNilDest: () => {\n\t\tif (dest_input_account.text != '') {\n\t\t\tget_dest_account_billing.run()\n\t\t}\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Migration_js_func_utils",
+  "deleted": false,
+  "gitSyncId": "638651304f9d9f1746a71d93_6386735c4f9d9f1746a71db6"
+}
