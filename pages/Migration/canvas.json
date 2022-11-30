@@ -691,6 +691,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "send_btn_send_data",
+                      "onClick": "{{js_func_utils.sendDataMigration()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -705,7 +706,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 5.95703125,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 15,
                       "dynamicBindingPathList": [
                         {
