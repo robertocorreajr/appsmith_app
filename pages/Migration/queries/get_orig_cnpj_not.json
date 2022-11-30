@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "WITH TEMP AS (\nSELECT\n\tUNNEST(string_to_array({{orig_input_cnpj.text}}, ',')) AS cnpj)\nSELECT\n\tcnpj\nFROM\n\tcompany\nWHERE\n\taccount_id != {{orig_input_account.text}}\n\tAND cnpj = ANY(\n\tSELECT\n\t\ttemp.cnpj\n\tFROM\n\t\tTEMP);\n",
+      "body": "WITH TEMP AS (\nSELECT\n\t\tUNNEST(string_to_array({{orig_input_cnpj.text}}, ',')) AS cnpj)\nSELECT\n\taccount_id,\n\tcnpj,\n\t\"name\"\nFROM\n\tcompany\nWHERE\n\t\taccount_id != {{orig_input_account.text}}\n\tAND cnpj = ANY(\n\tSELECT\n\t\ttemp.cnpj\n\tFROM\n\t\tTEMP);",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {

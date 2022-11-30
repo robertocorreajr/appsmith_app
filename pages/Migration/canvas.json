@@ -444,7 +444,11 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "orig_input_account",
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onTextChanged"
+                        }
+                      ],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -842,7 +846,7 @@
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
-                      "animateLoading": true,
+                      "animateLoading": false,
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 4.703125,
@@ -894,7 +898,7 @@
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
-                      "animateLoading": true,
+                      "animateLoading": false,
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 4.703125,
@@ -1077,7 +1081,7 @@
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
-                      "animateLoading": true,
+                      "animateLoading": false,
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 6.583984375,
@@ -1129,7 +1133,7 @@
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
-                      "animateLoading": true,
+                      "animateLoading": false,
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 6.583984375,
@@ -1181,7 +1185,7 @@
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
-                      "animateLoading": true,
+                      "animateLoading": false,
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 6.583984375,
@@ -1233,7 +1237,7 @@
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
-                      "animateLoading": true,
+                      "animateLoading": false,
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 6.583984375,
@@ -1285,7 +1289,7 @@
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
-                      "animateLoading": true,
+                      "animateLoading": false,
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 6.583984375,
@@ -1337,7 +1341,7 @@
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
-                      "animateLoading": true,
+                      "animateLoading": false,
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 6.583984375,
@@ -1389,7 +1393,7 @@
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
-                      "animateLoading": true,
+                      "animateLoading": false,
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 6.583984375,
@@ -1446,7 +1450,7 @@
                       "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
                       "hideCard": false,
-                      "animateLoading": true,
+                      "animateLoading": false,
                       "parentColumnSpace": 6.583984375,
                       "dynamicTriggerPathList": [
                         {
@@ -1550,7 +1554,7 @@
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
-                      "animateLoading": true,
+                      "animateLoading": false,
                       "overflow": "NONE",
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 6.583984375,
@@ -2162,6 +2166,12 @@
                         },
                         {
                           "key": "primaryColumns.cnpj.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.account_id.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.name.computedValue"
                         }
                       ],
                       "leftColumn": 0,
@@ -2204,7 +2214,9 @@
                       "widgetName": "dest_table_cnpj",
                       "defaultPageSize": 0,
                       "columnOrder": [
-                        "cnpj"
+                        "account_id",
+                        "cnpj",
+                        "name"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
@@ -2244,6 +2256,62 @@
                           "isDiscardVisible": true,
                           "computedValue": "{{dest_table_cnpj.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cnpj\"]))}}",
                           "validation": {}
+                        },
+                        "account_id": {
+                          "allowCellWrapping": false,
+                          "index": 0,
+                          "width": 150,
+                          "originalId": "account_id",
+                          "id": "account_id",
+                          "alias": "account_id",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "number",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Account_ID",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{dest_table_cnpj.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"account_id\"]))}}",
+                          "validation": {},
+                          "cellBackground": ""
+                        },
+                        "name": {
+                          "allowCellWrapping": false,
+                          "index": 2,
+                          "width": 150,
+                          "originalId": "name",
+                          "id": "name",
+                          "alias": "name",
+                          "horizontalAlignment": "LEFT",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "fontStyle": "",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellEditable": false,
+                          "isEditable": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Name",
+                          "isSaveVisible": true,
+                          "isDiscardVisible": true,
+                          "computedValue": "{{dest_table_cnpj.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"name\"]))}}",
+                          "validation": {},
+                          "cellBackground": ""
                         }
                       },
                       "key": "nbkt5tcixc",
