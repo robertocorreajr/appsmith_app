@@ -716,13 +716,13 @@
                         }
                       ],
                       "googleRecaptchaKey": "",
-                      "text": "Migrar",
+                      "text": "Migrar CNPJ's",
                       "isDisabled": false,
                       "key": "dnv356hftw",
                       "isDeprecated": false,
                       "rightColumn": 52,
                       "isDefaultClickDisabled": true,
-                      "iconName": "bring-data",
+                      "iconName": "changes",
                       "widgetId": "qs8tcangw0",
                       "isVisible": true,
                       "recaptchaType": "V3",
@@ -733,7 +733,7 @@
                       "disabledWhenInvalid": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "buttonVariant": "PRIMARY",
-                      "iconAlign": "right",
+                      "iconAlign": "left",
                       "placement": "CENTER"
                     },
                     {
@@ -812,7 +812,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "text": "Força Busca",
+                      "text": "Forçar Busca",
                       "isDisabled": false,
                       "key": "dnv356hftw",
                       "isDeprecated": false,

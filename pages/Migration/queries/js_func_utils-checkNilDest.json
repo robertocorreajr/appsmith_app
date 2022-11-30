@@ -19,10 +19,10 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  if (dest_input_account.text != '') {\n    get_dest_account_billing.run();\n  }\n}",
+      "body": "() => {\n  if (dest_input_account.text != '') {\n    get_dest_account_billing.run();\n    get_orig_cnpj.run();\n    get_orig_cnpj_not.run();\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  if (dest_input_account.text != '') {\n    get_dest_account_billing.run();\n  }\n}"
+      "() => {\n  if (dest_input_account.text != '') {\n    get_dest_account_billing.run();\n    get_orig_cnpj.run();\n    get_orig_cnpj_not.run();\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
