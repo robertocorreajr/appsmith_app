@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  if (orig_check_limbo.isChecked == true) {\n    orig_input_account.text = '7937';\n    console.log(\"aguardando\");\n  } else {\n    orig_input_account.text = '3';\n  }\n}",
+      "body": "() => {\n  if (orig_check_limbo.isChecked == true) {\n    orig_input_account.text = '39746';\n    console.log(\"aguardando\");\n  } else {\n    orig_input_account.text = '3';\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
@@ -35,7 +35,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  if (orig_check_limbo.isChecked == true) {\n    orig_input_account.text = '7937';\n    console.log(\"aguardando\");\n  } else {\n    orig_input_account.text = '3';\n  }\n}"
+      "() => {\n  if (orig_check_limbo.isChecked == true) {\n    orig_input_account.text = '39746';\n    console.log(\"aguardando\");\n  } else {\n    orig_input_account.text = '3';\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

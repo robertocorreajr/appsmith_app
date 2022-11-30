@@ -740,13 +740,9 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "send_btn_clear",
-                      "onClick": "{{resetWidget(\"orig_input_account\",true);\nresetWidget(\"dest_input_account\",true);\nresetWidget(\"orig_input_cnpj\",true);\nresetWidget(\"send_input_sos\",true)\n}}",
+                      "onClick": "{{resetWidget(\"orig_txt_cnpj\",true)}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "onClick"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [

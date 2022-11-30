@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "checkNilDest",
-    "fullyQualifiedName": "js_func_utils.checkNilDest",
+    "name": "clearFields",
+    "fullyQualifiedName": "js_func_utils.clearFields",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,10 +19,10 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  if (dest_input_account.text !== '') {\n    get_dest_account_billing.run();\n    get_orig_cnpj.run();\n    get_orig_cnpj_not.run();\n  }\n}",
+      "body": "() => {\n  resetWidget(\"orig_input_account\", true);\n  resetWidget(\"dest_input_account\", true);\n  resetWidget(\"orig_input_cnpj\", true);\n  resetWidget(\"send_input_sos\", true);\n  resetWidget(\"orig_txt_cnpj\", true);\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  if (dest_input_account.text !== '') {\n    get_dest_account_billing.run();\n    get_orig_cnpj.run();\n    get_orig_cnpj_not.run();\n  }\n}"
+      "() => {\n  resetWidget(\"orig_input_account\", true);\n  resetWidget(\"dest_input_account\", true);\n  resetWidget(\"orig_input_cnpj\", true);\n  resetWidget(\"send_input_sos\", true);\n  resetWidget(\"orig_txt_cnpj\", true);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Migration_js_func_utils.checkNilDest",
+  "id": "Migration_js_func_utils.clearFields",
   "deleted": false,
-  "gitSyncId": "638651304f9d9f1746a71d93_638759144f9d9f1746a71de3"
+  "gitSyncId": "638651304f9d9f1746a71d93_6387973670dbf9767e4086ef"
 }
