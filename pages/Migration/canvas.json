@@ -759,7 +759,7 @@
                       ],
                       "googleRecaptchaKey": "",
                       "text": "Migrar CNPJ's",
-                      "isDisabled": "{{ !orig_input_account.text || !dest_input_account.text || !orig_input_cnpj.text || !send_input_sos.text || orig_input_account.txt == dest_input_account.text || orig_input_account.text < 1 || dest_input_account.text < 1 }}",
+                      "isDisabled": "{{ !orig_input_account.text || !dest_input_account.text || !orig_input_cnpj.text || !send_input_sos.text || (orig_input_account.text === dest_input_account.text) || orig_input_account.text < 1 || dest_input_account.text < 1 }}",
                       "key": "dnv356hftw",
                       "isDeprecated": false,
                       "rightColumn": 52,
