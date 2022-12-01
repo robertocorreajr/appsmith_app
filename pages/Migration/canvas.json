@@ -333,7 +333,7 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "CNPJ: {{get_orig_account_billing.data[0].cnpj}}",
+                      "text": "CNPJ: {{?get_orig_account_billing.data[0].cnpj}}",
                       "key": "4wutxgkal0",
                       "isDeprecated": false,
                       "rightColumn": 50,
