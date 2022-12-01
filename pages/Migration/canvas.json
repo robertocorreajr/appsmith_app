@@ -506,7 +506,7 @@
                       "key": "wlc89ouhuk",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "onTextChanged": "{{js_func_utils.validateFields()}}",
+                      "onTextChanged": "{{js_func_utils.checkNilOrig()}}",
                       "isDeprecated": false,
                       "rightColumn": 36,
                       "iconName": "id-number",

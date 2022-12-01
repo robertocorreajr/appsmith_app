@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "validateFields",
-    "fullyQualifiedName": "js_func_utils.validateFields",
+    "name": "myFun2",
+    "fullyQualifiedName": "JSObject1.myFun2",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,17 +14,18 @@
       "userPermissions": []
     },
     "pageId": "Migration",
-    "collectionId": "Migration_js_func_utils",
+    "collectionId": "Migration_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  if (orig_input_account.text == '' || dest_input_account.text == '' || orig_input_cnpj.text == '') {\n    send_btn_send_data.isDisabled = true;\n  } else {\n    send_btn_send_data.isDisabled = false;\n  }\n}",
+      "body": "async () => {}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
+    "clientSideExecution": true,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -34,14 +35,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  if (orig_input_account.text == '' || dest_input_account.text == '' || orig_input_cnpj.text == '') {\n    send_btn_send_data.isDisabled = true;\n  } else {\n    send_btn_send_data.isDisabled = false;\n  }\n}"
+      "async () => {}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Migration_js_func_utils.validateFields",
+  "id": "Migration_JSObject1.myFun2",
   "deleted": false,
-  "gitSyncId": "638651304f9d9f1746a71d93_6388e643fc5f410bcd906203"
+  "gitSyncId": "6388e7aafc5f410bcd906206_63890075fc5f410bcd906224"
 }
