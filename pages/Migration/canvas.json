@@ -724,7 +724,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "send_btn_send_data",
-                      "onClick": "{{send_func_migration_v2.run(() => showModal('modal_sucesso'), () => {})}}",
+                      "onClick": "{{showModal('modal_sucesso')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -2502,7 +2502,7 @@
                   "widgetName": "Canvas4",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 0,
+                  "bottomRow": 370,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -2523,7 +2523,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "IconButton1",
-                      "onClick": "{{closeModal('Modal1')}}",
+                      "onClick": "{{closeModal('modal_sucesso')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Icon Button",
                       "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -2536,6 +2536,11 @@
                       "type": "ICON_BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 58,
                       "dynamicBindingPathList": [
                         {
@@ -2570,7 +2575,7 @@
                         "label"
                       ],
                       "topRow": 1,
-                      "bottomRow": 5,
+                      "bottomRow": 17,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -2587,14 +2592,17 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
                         }
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "text": "Sucesso!",
+                      "text": "Você tem certeza que deseja migrar os CNPJ's informados da conta origem: {{orig_input_account.text}} para a conta destinho {{dest_input_account.text}}?",
                       "key": "tlqdjv7cu9",
                       "isDeprecated": false,
-                      "rightColumn": 41,
+                      "rightColumn": 57,
                       "textAlign": "LEFT",
                       "dynamicHeight": "FIXED",
                       "widgetId": "rqhcp0fe0b",
@@ -2614,8 +2622,9 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "close_btn",
-                      "onClick": "{{closeModal('Modal1')}}",
+                      "onClick": "{{closeModal('modal_sucesso')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -2627,6 +2636,11 @@
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 31,
                       "dynamicBindingPathList": [
                         {
@@ -2659,7 +2673,9 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "confirm_btn",
+                      "onClick": "{{\nsend_func_migration_v2.run(() => showAlert('Migração realizada com sucesso!'), () => {});\ncloseModal('modal_sucesso')\n}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -2671,6 +2687,11 @@
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 47,
                       "dynamicBindingPathList": [
                         {
