@@ -465,11 +465,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "orig_input_account",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "onTextChanged"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -510,7 +506,7 @@
                       "key": "wlc89ouhuk",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "onTextChanged": "{{\njs_func_utils.checkNilOrig();\njs_func_utils.validateFields();\n}}",
+                      "onTextChanged": "{{js_func_utils.validateFields()}}",
                       "isDeprecated": false,
                       "rightColumn": 36,
                       "iconName": "id-number",
