@@ -722,7 +722,11 @@
                       "widgetName": "send_btn_send_data",
                       "onClick": "{{showModal('modal_sucesso')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "isDisabled"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -748,11 +752,14 @@
                         },
                         {
                           "key": "borderRadius"
+                        },
+                        {
+                          "key": "isDisabled"
                         }
                       ],
                       "googleRecaptchaKey": "",
                       "text": "Migrar CNPJ's",
-                      "isDisabled": true,
+                      "isDisabled": "{{ !orig_input_account.text || !dest_input_account.text || !orig_input_cnpj.text || !send_input_sos.text || orig_input_account.txt === dest_input_account.text || orig_input_account.text < 1 || dest_input_account.text < 1 || !orig_input_cnpj.text }}",
                       "key": "dnv356hftw",
                       "isDeprecated": false,
                       "rightColumn": 52,
@@ -1560,7 +1567,7 @@
                       "key": "wlc89ouhuk",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "onTextChanged": "{{js_func_utils.checkNilDest()}}",
+                      "onTextChanged": "{{js_teste.validateFields()}}",
                       "isDeprecated": false,
                       "rightColumn": 36,
                       "iconName": "id-number",

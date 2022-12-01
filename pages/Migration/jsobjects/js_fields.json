@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "js_fields",
+    "pageId": "Migration",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tvalidateFields: () => {\n\t\tstoreValue(\"orig_account_id\", orig_input_account.text);\n\t\tstoreValue(\"dest_account_id\", dest_input_account.text);\n\t\tstoreValue(\"orig_cnpjs\", orig_input_cnpj.text);\n\t\tstoreValue(\"sos_number\", send_input_sos.text);\n\t\tif (appsmith.store.orig_account_id == 0 && appsmith.store.dest_account_id == 0 && appsmith.store.orig_cnpjs == 0 && appsmith.store.sos_number == 0) {\n\t\t\tconsole.log(\"if\");\n\t\t\tconsole.log(appsmith.store.orig_account_id);\n\t\t\tsend_btn_send_data.isDisabled = true;\n\t\t\tconsole.log(send_btn_send_data.isDisabled);\n\t\t} else {\n\t\t\tconsole.log(\"else\");\n\t\t\tSet(send_btn_send_data.isDisabled = false);\n\t\t\tconsole.log(send_btn_send_data.isDisabled);\n\t\t}\n\t},\n};\n",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Migration_js_fields",
+  "deleted": false,
+  "gitSyncId": "6388e7aafc5f410bcd906206_63891272fc5f410bcd906236"
+}
