@@ -22,7 +22,7 @@
       "body": "() => {\n  if (orig_input_account.text !== '') {\n    get_orig_account_billing.run();\n    get_orig_cnpj.run();\n    get_orig_cnpj_not.run();\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": true
+      "isAsync": false
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
