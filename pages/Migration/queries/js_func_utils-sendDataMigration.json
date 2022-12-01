@@ -22,7 +22,7 @@
       "body": "() => {\n  if (orig_input_account.text !== '' && dest_input_account.text !== '' && orig_input_cnpj.text !== '') {\n    send_func_migration_v2.run();\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
