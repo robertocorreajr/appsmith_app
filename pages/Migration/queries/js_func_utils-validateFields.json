@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  if (orig_input_account.text !== '' && dest_input_account.text !== '' && orig_input_cnpj.text !== '') {\n    send_btn_send_data.isDisabled = false;\n  }\n}",
+      "body": "() => {\n  if (orig_input_account.text !== '' && dest_input_account.text !== '' && orig_input_cnpj.text !== '') {\n    send_btn_send_data.isDisabled = false;\n  } else {\n    send_btn_send_data.isDisabled = true;\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  if (orig_input_account.text !== '' && dest_input_account.text !== '' && orig_input_cnpj.text !== '') {\n    send_btn_send_data.isDisabled = false;\n  }\n}"
+      "() => {\n  if (orig_input_account.text !== '' && dest_input_account.text !== '' && orig_input_cnpj.text !== '') {\n    send_btn_send_data.isDisabled = false;\n  } else {\n    send_btn_send_data.isDisabled = true;\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
