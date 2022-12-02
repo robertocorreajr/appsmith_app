@@ -78,7 +78,7 @@
                   ],
                   "children": [
                     {
-                      "widgetName": "Text1Copy",
+                      "widgetName": "orig_txt_accounts_binds",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "searchTags": [
@@ -200,7 +200,11 @@
                     },
                     {
                       "widgetName": "orig_check_limbo",
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onCheckChange"
+                        }
+                      ],
                       "displayName": "Checkbox",
                       "iconSVG": "/static/media/icon.aaab032b43383e4fa53ffc0ef40c90ef.svg",
                       "searchTags": [
@@ -229,7 +233,7 @@
                         }
                       ],
                       "labelPosition": "Right",
-                      "onCheckChange": "",
+                      "onCheckChange": "{{orig_input_account.text = '999'; \nconsole.log(orig_input_account.text)}}",
                       "isDisabled": false,
                       "key": "j06glk67xm",
                       "isRequired": false,
@@ -250,7 +254,7 @@
                       "minDynamicHeight": 4
                     },
                     {
-                      "widgetName": "Text1",
+                      "widgetName": "orig_txt_accounts",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "searchTags": [
