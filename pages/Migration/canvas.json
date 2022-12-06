@@ -968,7 +968,7 @@
                       "widgetId": "4s4iudp2rn",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                       "isVisible": true,
-                      "label": "Limbo",
+                      "label": "Limbos",
                       "version": 1,
                       "parentId": "dtr1suxk5y",
                       "renderMode": "CANVAS",
