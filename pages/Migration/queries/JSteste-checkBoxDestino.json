@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "testeFunc",
-    "fullyQualifiedName": "js_func_utils.testeFunc",
+    "name": "checkBoxDestino",
+    "fullyQualifiedName": "JSteste.checkBoxDestino",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -14,12 +14,12 @@
       "userPermissions": []
     },
     "pageId": "Migration",
-    "collectionId": "Migration_js_func_utils",
+    "collectionId": "Migration_JSteste",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  appsmith.store.teste = orig_input_account.text;\n}",
+      "body": "() => {}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  appsmith.store.teste = orig_input_account.text;\n}"
+      "() => {}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Migration_js_func_utils.testeFunc",
+  "id": "Migration_JSteste.checkBoxDestino",
   "deleted": false,
-  "gitSyncId": "638651304f9d9f1746a71d93_638a450beb442c34ddcb37bd"
+  "gitSyncId": "638651304f9d9f1746a71d93_6390f1950dbe607e6d46141f"
 }

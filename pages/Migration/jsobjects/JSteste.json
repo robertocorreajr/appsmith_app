@@ -1,0 +1,16 @@
+{
+  "unpublishedCollection": {
+    "name": "JSteste",
+    "pageId": "Migration",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tcheckBoxOrigem: () => {\n\t\tif (orig_check_limbo.isChecked == true) {\n\t\t\torig_input_account.isDisabled = true;\n\t\t\tconsole.log(orig_input_account.isDisabled)\n\t\t} else {\n\t\t\torig_input_account.isDisabled = false;\n\t\t\tresetWidget(\"orig_input_account\",true);\n\t\t\tconsole.log(orig_input_account.isDisabled)\n\t\t}\n\t},\n\tcheckBoxDestino: () => {\n\t\t//write code here\n\t}\n}",
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Migration_JSteste",
+  "deleted": false,
+  "gitSyncId": "638651304f9d9f1746a71d93_6390f0e1b0f13f6314ccdec4"
+}

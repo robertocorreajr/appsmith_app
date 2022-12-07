@@ -229,7 +229,7 @@
                         }
                       ],
                       "labelPosition": "Right",
-                      "onCheckChange": "{{js_func_utils.changeCheckBoxOrig()}}",
+                      "onCheckChange": "{{JSteste.checkBoxOrigem()}}",
                       "isDisabled": false,
                       "key": "j06glk67xm",
                       "isRequired": false,
