@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  storeValue(\"orig_account_id\", orig_input_account.text);\n  storeValue(\"dest_account_id\", dest_input_account.text);\n  storeValue(\"orig_cnpjs\", orig_input_cnpj.text);\n  storeValue(\"sos_number\", send_input_sos.text);\n  if (appsmith.store.orig_account_id == 0) {\n    console.log(\"if\");\n    console.log(appsmith.store.orig_account_id);\n  } else {\n    console.log(\"else\");\n  }\n  return send_func_migration_v2.run();\n}",
+      "body": "() => {\n  storeValue(\"orig_account_id\", orig_input_account.text);\n  storeValue(\"dest_account_id\", dest_input_account.text);\n  storeValue(\"orig_cnpjs\", orig_input_cnpj.text);\n  storeValue(\"sos_number\", send_input_sos.text);\n  if (appsmith.store.orig_account_id == 0) {\n    console.log(\"if\");\n    console.log(appsmith.store.orig_account_id);\n  } else {\n    console.log(\"else\");\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  storeValue(\"orig_account_id\", orig_input_account.text);\n  storeValue(\"dest_account_id\", dest_input_account.text);\n  storeValue(\"orig_cnpjs\", orig_input_cnpj.text);\n  storeValue(\"sos_number\", send_input_sos.text);\n  if (appsmith.store.orig_account_id == 0) {\n    console.log(\"if\");\n    console.log(appsmith.store.orig_account_id);\n  } else {\n    console.log(\"else\");\n  }\n  return send_func_migration_v2.run();\n}"
+      "() => {\n  storeValue(\"orig_account_id\", orig_input_account.text);\n  storeValue(\"dest_account_id\", dest_input_account.text);\n  storeValue(\"orig_cnpjs\", orig_input_cnpj.text);\n  storeValue(\"sos_number\", send_input_sos.text);\n  if (appsmith.store.orig_account_id == 0) {\n    console.log(\"if\");\n    console.log(appsmith.store.orig_account_id);\n  } else {\n    console.log(\"else\");\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
