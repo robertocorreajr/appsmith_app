@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "checkNilDest",
-    "fullyQualifiedName": "js_func_utils.checkNilDest",
+    "name": "checkboxOrig",
+    "fullyQualifiedName": "js_func_utils.checkboxOrig",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -19,10 +19,10 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  if (dest_input_account.text !== '') {\n    get_dest_account_billing.run();\n    get_orig_cnpj.run();\n    get_orig_cnpj_not.run();\n    resetWidget(\"dest_check_limbo\", true);\n  }\n}",
+      "body": "() => {\n  storeValue('limboOrig', '4');\n  orig_input_account.text = appsmith.store.limboOrigem;\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -34,14 +34,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  if (dest_input_account.text !== '') {\n    get_dest_account_billing.run();\n    get_orig_cnpj.run();\n    get_orig_cnpj_not.run();\n    resetWidget(\"dest_check_limbo\", true);\n  }\n}"
+      "() => {\n  storeValue('limboOrig', '4');\n  orig_input_account.text = appsmith.store.limboOrigem;\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Migration_js_func_utils.checkNilDest",
+  "id": "Migration_js_func_utils.checkboxOrig",
   "deleted": false,
-  "gitSyncId": "638651304f9d9f1746a71d93_638759144f9d9f1746a71de3"
+  "gitSyncId": "638651304f9d9f1746a71d93_639a72e98274bf29ab626264"
 }

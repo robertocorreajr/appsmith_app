@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  resetWidget(\"orig_input_account\", true);\n  resetWidget(\"dest_input_account\", true);\n  resetWidget(\"orig_input_cnpj\", true);\n  resetWidget(\"send_input_sos\", true);\n  resetWidget(\"orig_txt_cnpj\", true);\n}",
+      "body": "() => {\n  resetWidget(\"orig_input_account\", true);\n  resetWidget(\"dest_input_account\", true);\n  resetWidget(\"orig_input_cnpj\", true);\n  resetWidget(\"send_input_sos\", true);\n  resetWidget(\"orig_txt_cnpj\", true);\n  resetWidget(\"orig_check_limbo\", true);\n  resetWidget(\"dest_check_limbo\", true);\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": true
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  resetWidget(\"orig_input_account\", true);\n  resetWidget(\"dest_input_account\", true);\n  resetWidget(\"orig_input_cnpj\", true);\n  resetWidget(\"send_input_sos\", true);\n  resetWidget(\"orig_txt_cnpj\", true);\n}"
+      "() => {\n  resetWidget(\"orig_input_account\", true);\n  resetWidget(\"dest_input_account\", true);\n  resetWidget(\"orig_input_cnpj\", true);\n  resetWidget(\"send_input_sos\", true);\n  resetWidget(\"orig_txt_cnpj\", true);\n  resetWidget(\"orig_check_limbo\", true);\n  resetWidget(\"dest_check_limbo\", true);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

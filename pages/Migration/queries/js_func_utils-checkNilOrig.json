@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "() => {\n  if (orig_input_account.text !== '') {\n    get_orig_account_billing.run();\n    get_orig_cnpj.run();\n    get_orig_cnpj_not.run();\n  }\n}",
+      "body": "() => {\n  if (orig_input_account.text !== '') {\n    get_orig_account_billing.run();\n    get_orig_cnpj.run();\n    get_orig_cnpj_not.run();\n    resetWidget(\"orig_check_limbo\", true);\n  }\n}",
       "selfReferencingDataPaths": [],
       "jsArguments": [],
       "isAsync": false
@@ -34,7 +34,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "() => {\n  if (orig_input_account.text !== '') {\n    get_orig_account_billing.run();\n    get_orig_cnpj.run();\n    get_orig_cnpj_not.run();\n  }\n}"
+      "() => {\n  if (orig_input_account.text !== '') {\n    get_orig_account_billing.run();\n    get_orig_cnpj.run();\n    get_orig_cnpj_not.run();\n    resetWidget(\"orig_check_limbo\", true);\n  }\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

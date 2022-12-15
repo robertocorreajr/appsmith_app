@@ -133,11 +133,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "orig_input_account",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "onTextChanged"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -178,7 +174,7 @@
                       "key": "wlc89ouhuk",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "onTextChanged": "{{js_func_utils.checkNilOrig();\njs_func_utils.validateFields()}}",
+                      "onTextChanged": "{{js_func_utils.checkNilOrig()}}",
                       "isDeprecated": false,
                       "rightColumn": 35,
                       "iconName": "id-number",
@@ -229,7 +225,7 @@
                         }
                       ],
                       "labelPosition": "Right",
-                      "onCheckChange": "{{JSteste.checkBoxOrigem()}}",
+                      "onCheckChange": "{{resetWidget(\"orig_input_account\",true)}}",
                       "isDisabled": false,
                       "key": "j06glk67xm",
                       "isRequired": false,
@@ -1865,6 +1861,7 @@
               "boxShadow": "none",
               "widgetName": "question_before_update",
               "isCanvas": true,
+              "dynamicPropertyPathList": [],
               "displayName": "Modal",
               "iconSVG": "/static/media/icon.4975978e9a961fb0bfb4e38de7ecc7c5.svg",
               "searchTags": [
